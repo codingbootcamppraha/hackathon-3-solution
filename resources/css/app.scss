@@ -1,0 +1,96 @@
+@import 'animal';
+
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.page-content {
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    gap: 2rem;
+
+    .new-patient {
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+
+        input {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        input[type=submit]:hover {
+            cursor: pointer;
+            background-color: rgb(200, 200, 200);
+        }
+    }
+}
+
+.results {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .result {
+        padding: 1rem;
+        text-align: center;
+        border: 2px lightgray solid;
+    }
+
+    .img {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+
+    svg {
+        width: 1rem;
+    }
+}
+
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
